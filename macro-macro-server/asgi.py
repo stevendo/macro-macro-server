@@ -1,5 +1,5 @@
 """
-ASGI config for macro-macro project.
+ASGI config for macro-macro-server project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
