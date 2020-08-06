@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
 from .models.mango import Mango
+from .models.food import Food
 from .models.user import User
 
 
@@ -9,6 +10,11 @@ class MangoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mango
         fields = ('id', 'name', 'color', 'ripe', 'owner')
+
+class FoodSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Food
+        fields = ('id', 'name', 'carb', 'fat', 'protein', 'owner')
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
